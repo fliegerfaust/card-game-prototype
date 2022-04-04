@@ -11,7 +11,6 @@ namespace Code.Infrastructure.Services.Game
   public class DifficultyDataService
   {
     public int Points { get; private set; }
-    public int BestPoints { get; private set; }
     public int DifficultyLevel { get; private set; }
 
     private readonly SignalBus _signalBus;
@@ -30,9 +29,6 @@ namespace Code.Infrastructure.Services.Game
     public void IncreasePoints()
     {
       Points += _levelData.MoveCost;
-
-      if (Points > BestPoints)
-        BestPoints = Points;
 
       _signalBus.Fire(new PointsChangedSignal() {Value = Points});
 

@@ -48,7 +48,9 @@ namespace Code.Infrastructure.States
     {
       _progressService.Progress.Points = _difficultyService.Points;
       _progressService.Progress.DifficultyLevel = _difficultyService.DifficultyLevel;
-      _progressService.Progress.BestPoints = _difficultyService.BestPoints;
+
+      if (_progressService.Progress.Points > _progressService.Progress.BestPoints)
+        _progressService.Progress.BestPoints = _progressService.Progress.Points;
     }
 
     public void Exit()
