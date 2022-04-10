@@ -132,7 +132,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5642628734933048909, guid: c968cee159ca58c43aa8937c05ce6e40, type: 3}
       propertyPath: CardSpawnId
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5841880229169079072, guid: c968cee159ca58c43aa8937c05ce6e40, type: 3}
       propertyPath: m_RootOrder

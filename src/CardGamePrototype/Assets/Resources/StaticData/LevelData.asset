@@ -32,5 +32,5 @@ MonoBehaviour:
     Position: {x: 0, y: 0, z: 0}
   - CardSpawnId: 2
     Position: {x: -2.5, y: 0, z: 0}
-  - CardSpawnId: 2
+  - CardSpawnId: 1
     Position: {x: -2.5, y: -2.5, z: 0}

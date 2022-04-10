@@ -8,7 +8,7 @@ namespace Code.Infrastructure.Services.Game
   public class RandomDataService
   {
     private const float ChanceMultiplier = 0.1f;
-    private const float MaxRedCardChance = 50f;
+    private const float MaxRedCardChance = 0.5f;
 
     public CardSpawnId CardSpawnId =>
       Random.value <= RedCardChance() ? CardSpawnId.Enemy : CardSpawnId.Heal;
